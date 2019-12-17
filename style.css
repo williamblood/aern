@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+label,
+button,
+p,
+input,
+li {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+button {
+  background-color: #4c6e97;
+  padding: 1rem 4rem;
+  color: whitesmoke;
+  border-radius: 1rem;
+  transition-duration: 0.4s;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav Section with HERO */
+.main-header {
+  background: #131c27;
+  color: whitesmoke;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#logo {
+  font-size: 2.5rem;
+  font-family: "Pattaya", sans-serif;
+  flex: 2 1 30rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/starting-files/img/landing-page8.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: whitesmoke;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.486);
+}
+.hero h3 {
+  padding: 3rem;
+}
+.hero i {
+  font-weight: 100;
+}
+button:hover {
+  font-size: 2rem;
+  background-color: whitesmoke;
+  color: #4c6e97;
+}
+@media screen and (max-width: 777px) {
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  #logo {
+    padding: 1rem;
+  }
+}
