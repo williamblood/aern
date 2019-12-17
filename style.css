@@ -109,6 +109,32 @@ button:hover {
   background-color: whitesmoke;
   color: #4c6e97;
 }
+
+/* Locations */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/starting-files/img/new-york-page.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.locations-header {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-header h2 {
+  padding: 4rem 0rem;
+  text-decoration-line: underline;
+}
+.locations-header h3 {
+  padding-bottom: 15rem;
+}
+
+/* Media Query */
 @media screen and (max-width: 777px) {
   nav {
     text-align: center;
