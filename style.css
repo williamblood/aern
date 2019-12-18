@@ -47,9 +47,14 @@ button {
   padding: 1rem 4rem;
   color: whitesmoke;
   border-radius: 1rem;
-  transition-duration: 0.4s;
   border: none;
   cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: #4c6e97;
 }
 
 /* Nav Section with HERO */
@@ -96,18 +101,14 @@ nav ul {
   text-align: center;
   align-items: center;
   color: whitesmoke;
-  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.486);
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.486);
 }
 .hero h3 {
   padding: 3rem;
+  font-weight: 340;
 }
 .hero i {
   font-weight: 100;
-}
-button:hover {
-  font-size: 2rem;
-  background-color: whitesmoke;
-  color: #4c6e97;
 }
 
 /* Locations */
@@ -119,6 +120,8 @@ button:hover {
   background-position: center;
   background-size: cover;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .locations-header {
@@ -138,6 +141,32 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  z-index: 0;
+  animation: cumulusAnimation 10s infinite alternate-reverse ease-in-out;
+}
+.moving-cloud-2 {
+  opacity: 0.8;
+  top: 20%;
+  z-index: -1;
+  animation: cumulusAnimation 20s infinite alternate ease-in-out;
+}
+
+@keyframes cumulusAnimation {
+  from {
+    transform: translate(25%, -8%);
+  }
+  to {
+    transition: translate(50%, -30%);
+  }
 }
 
 /* Media Query */
