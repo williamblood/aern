@@ -273,7 +273,7 @@ nav ul {
 .form-wrapper {
   align-items: center;
   text-align: center;
-  min-width: 75%;
+  min-width: 55%;
   margin: 20%;
   color: whitesmoke;
   background: linear-gradient(rgba(31, 45, 63, 0.649), rgba(31, 45, 63, 0.849));
@@ -306,4 +306,30 @@ form > button {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 100%;
+}
+
+/* Footer */
+
+footer {
+  color: whitesmoke;
+  background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
 }
