@@ -97,7 +97,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("/starting-files/img/landing-page8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,6 @@ nav ul {
 }
 .hero h3 {
   padding: 5rem;
-  font-weight: lighter;
 }
 .hero i {
   font-weight: lighter;
