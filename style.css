@@ -200,16 +200,27 @@ nav ul {
   display: flex;
   position: relative;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  background: lightcoral;
   flex: 1 1 25rem;
   min-height: 40vh;
   margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 25px 25px rgba(0, 0, 0, 0.1);
 }
 .cards img {
-  height: 100px;
+  max-width: 15%;
+}
+.card-icon {
+  text-align: center;
+  background: #343c44;
+  padding: 2rem;
+}
+.card h4,
+.card p {
+  text-align: center;
+  padding: 2.5rem;
 }
 
 /* Media Query */
@@ -231,7 +242,7 @@ nav ul {
     z-index: -2;
   }
 
-  .locations-header h3 {
+  .locations-head h3 {
     background: whitesmoke;
     background-clip: text;
     -webkit-background-clip: text;
