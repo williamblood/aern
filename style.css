@@ -97,7 +97,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), transparent),
     url("/starting-files/img/landing-page8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,19 +277,6 @@ nav ul {
   }
   .learn-more:hover {
     text-shadow: 0 0 rgb(0, 0, 0);
-  }
-
-  .benefits-head h3 {
-    font-size: 1.95rem;
-    font-weight: 100;
-  }
-  .hero h3 {
-    font-size: 2.3rem;
-    font-weight: lighter;
-  }
-  .form-wrapper {
-    width: 90%;
-    margin: auto;
   }
 }
 
